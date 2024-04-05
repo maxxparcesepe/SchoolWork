@@ -1,0 +1,81 @@
+INSERTION SORT(Array)
+
+for j = 2 to Array.length
+	KEY = Array[j]
+	//insert A[j] into the sorted sequence a[1...j-1]
+	i = j-1
+	while i > 0 and Array[i] > key
+	  Array[i+1] = Array[i]
+	  i= i-1
+        Array[i+1] = KEY
+
+
+//////////////////////////////////////////////
+
+MERGE SORT(Array, p, r)
+
+n1 = q-p+1
+n2 = r-q
+
+//allocate two arrays L[1..n1+1] and R[1..n2+1]
+
+for i = 1 to n1
+	L[i] = A[p+i-1]
+for j=1 to n2
+	R[j] = A[q+j]
+
+L[n1+1] = infinty 
+
+R[n1+1] = infinty 
+
+i = 1
+
+j = 1
+
+for k = p to r 
+  if L[i] <= R[j]
+    A[k] = L[i]
+    i = i + 1
+  else 
+    A[k] = R[j]
+    j = j + 1 
+
+////////////////////////////////////////////
+
+ Make a function RANDOM(a, b) thatreturns an integer between a and b, inclusive, with each such integer being equally likely.
+////////////////////////////////////////////
+
+PARTITION(A, p, r)
+1 x = A[r]
+2 i = p - 1
+3 for j = p to r - 1
+4 if A[j] <= x
+5 i = i + 1
+6 exchange A[i] with A[j] 
+7 exchange A[i + 1] with A[r]
+8 return i + 1
+
+////////////////////////////////////////////
+
+RANDOMIZED-PARTITION(A, p, r)
+1 i = RANDOM(p, r)
+2 exchange A[r] with A[i]
+3 return PARTITION(A, p, r)
+
+////////////////////////////////////////////
+
+RANDOMIZED SELECT(Array, p, r, i)
+
+1 if p == r
+2 return Array[p]
+3 q = RANDOMIZED-PARTITION(A, p, r)
+4 k = q - p + 1
+5 if i = = k // the pivot value is the answer
+6 return A[q]
+7 else if i<k
+8 return RANDOMIZED-SELECT(Array, p, q -1, i) 
+9 else return RANDOMIZED-SELECT(Array, q + 1, r, i - k)
+
+
+
+Can you design code in c++ for this pseudocode? 

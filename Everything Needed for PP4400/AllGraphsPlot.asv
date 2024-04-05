@@ -1,0 +1,32 @@
+% Assuming you have a table named YourTableName with columns 'n', 'TheoreticalRunTime', 'EmpiricalRunTime'
+% Replace YourTableName with the actual name of your table
+
+% Read data from the table
+data = results;
+
+% Extract columns from the table
+n_values = data.n;
+insertionSort = data.("Insertion Sort");
+mergeSort = data.("Merge Sort ");
+randomizedSelect = data.("Randomized Select");
+
+
+% Plot data
+figure;
+plot(n_values, theoretical_run_time, '-o', 'DisplayName', 'Theoretical Run Time');
+hold on;
+plot(n_values, empirical_run_time, '-o', 'DisplayName', 'Empirical Run Time');
+
+% Customize plot
+title('Algorithm Run Time Comparison');
+xlabel('n Iterations');
+ylabel('Run Time (seconds)');
+legend('Location', 'Best');
+grid on;
+
+% Display the run times at each point
+text(n_values, randomizedSelect, num2str(randomizedSelect, '%.4f'), 'HorizontalAlignment', 'left', 'VerticalAlignment', 'bottom');
+text(n_values, insertionSort, num2str(insertionSort, '%.4f'), 'HorizontalAlignment', 'left', 'VerticalAlignment', 'bottom');
+text(n_values, mergeSort, num2str(m, '%.4f'), 'HorizontalAlignment', 'left', 'VerticalAlignment', 'bottom');
+
+

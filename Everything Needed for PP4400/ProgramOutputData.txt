@@ -1,0 +1,250 @@
+n = 10000, Run = 1
+Insertion Sort Time: 0.290086 seconds
+Merge Sort Time: 0.01993 seconds
+Randomized Select Time: 0.000437 seconds
+-------------------------
+n = 10000, Run = 2
+Insertion Sort Time: 0.339732 seconds
+Merge Sort Time: 0.015725 seconds
+Randomized Select Time: 0.00035 seconds
+-------------------------
+n = 10000, Run = 3
+Insertion Sort Time: 0.345557 seconds
+Merge Sort Time: 0.016187 seconds
+Randomized Select Time: 0.000268 seconds
+-------------------------
+n = 10000, Run = 4
+Insertion Sort Time: 0.289439 seconds
+Merge Sort Time: 0.014546 seconds
+Randomized Select Time: 0.000159 seconds
+-------------------------
+n = 10000, Run = 5
+Insertion Sort Time: 0.280597 seconds
+Merge Sort Time: 0.014352 seconds
+Randomized Select Time: 0.000276 seconds
+-------------------------
+n = 20000, Run = 1
+Insertion Sort Time: 1.13255 seconds
+Merge Sort Time: 0.029156 seconds
+Randomized Select Time: 0.000348 seconds
+-------------------------
+n = 20000, Run = 2
+Insertion Sort Time: 1.12668 seconds
+Merge Sort Time: 0.029472 seconds
+Randomized Select Time: 0.000422 seconds
+-------------------------
+n = 20000, Run = 3
+Insertion Sort Time: 1.12811 seconds
+Merge Sort Time: 0.029575 seconds
+Randomized Select Time: 0.00065 seconds
+-------------------------
+n = 20000, Run = 4
+Insertion Sort Time: 1.26352 seconds
+Merge Sort Time: 0.034456 seconds
+Randomized Select Time: 0.000839 seconds
+-------------------------
+n = 20000, Run = 5
+Insertion Sort Time: 1.33512 seconds
+Merge Sort Time: 0.036202 seconds
+Randomized Select Time: 0.00037 seconds
+-------------------------
+n = 30000, Run = 1
+Insertion Sort Time: 2.9561 seconds
+Merge Sort Time: 0.054281 seconds
+Randomized Select Time: 0.001806 seconds
+-------------------------
+n = 30000, Run = 2
+Insertion Sort Time: 3.07114 seconds
+Merge Sort Time: 0.067512 seconds
+Randomized Select Time: 0.001007 seconds
+-------------------------
+n = 30000, Run = 3
+Insertion Sort Time: 3.16114 seconds
+Merge Sort Time: 0.045351 seconds
+Randomized Select Time: 0.001292 seconds
+-------------------------
+n = 30000, Run = 4
+Insertion Sort Time: 2.53217 seconds
+Merge Sort Time: 0.044622 seconds
+Randomized Select Time: 0.000757 seconds
+-------------------------
+n = 30000, Run = 5
+Insertion Sort Time: 2.52703 seconds
+Merge Sort Time: 0.044321 seconds
+Randomized Select Time: 0.000984 seconds
+-------------------------
+n = 40000, Run = 1
+Insertion Sort Time: 4.56184 seconds
+Merge Sort Time: 0.060384 seconds
+Randomized Select Time: 0.000804 seconds
+-------------------------
+n = 40000, Run = 2
+Insertion Sort Time: 4.50546 seconds
+Merge Sort Time: 0.060734 seconds
+Randomized Select Time: 0.000874 seconds
+-------------------------
+n = 40000, Run = 3
+Insertion Sort Time: 4.53233 seconds
+Merge Sort Time: 0.060258 seconds
+Randomized Select Time: 0.000909 seconds
+-------------------------
+n = 40000, Run = 4
+Insertion Sort Time: 4.53552 seconds
+Merge Sort Time: 0.060215 seconds
+Randomized Select Time: 0.000744 seconds
+-------------------------
+n = 40000, Run = 5
+Insertion Sort Time: 4.56288 seconds
+Merge Sort Time: 0.065439 seconds
+Randomized Select Time: 0.00093 seconds
+-------------------------
+n = 50000, Run = 1
+Insertion Sort Time: 7.08171 seconds
+Merge Sort Time: 0.079153 seconds
+Randomized Select Time: 0.001843 seconds
+-------------------------
+n = 50000, Run = 2
+Insertion Sort Time: 7.07855 seconds
+Merge Sort Time: 0.07596 seconds
+Randomized Select Time: 0.001595 seconds
+-------------------------
+n = 50000, Run = 3
+Insertion Sort Time: 7.22623 seconds
+Merge Sort Time: 0.075539 seconds
+Randomized Select Time: 0.001326 seconds
+-------------------------
+n = 50000, Run = 4
+Insertion Sort Time: 7.23235 seconds
+Merge Sort Time: 0.075007 seconds
+Randomized Select Time: 0.001336 seconds
+-------------------------
+n = 50000, Run = 5
+Insertion Sort Time: 7.07455 seconds
+Merge Sort Time: 0.07528 seconds
+Randomized Select Time: 0.001327 seconds
+-------------------------
+n = 60000, Run = 1
+Insertion Sort Time: 10.1722 seconds
+Merge Sort Time: 0.092462 seconds
+Randomized Select Time: 0.001601 seconds
+-------------------------
+n = 60000, Run = 2
+Insertion Sort Time: 10.2354 seconds
+Merge Sort Time: 0.091821 seconds
+Randomized Select Time: 0.002396 seconds
+-------------------------
+n = 60000, Run = 3
+Insertion Sort Time: 10.2273 seconds
+Merge Sort Time: 0.092689 seconds
+Randomized Select Time: 0.001534 seconds
+-------------------------
+n = 60000, Run = 4
+Insertion Sort Time: 10.1879 seconds
+Merge Sort Time: 0.089957 seconds
+Randomized Select Time: 0.001961 seconds
+-------------------------
+n = 60000, Run = 5
+Insertion Sort Time: 10.1775 seconds
+Merge Sort Time: 0.092993 seconds
+Randomized Select Time: 0.001302 seconds
+-------------------------
+n = 70000, Run = 1
+Insertion Sort Time: 13.7341 seconds
+Merge Sort Time: 0.106362 seconds
+Randomized Select Time: 0.001422 seconds
+-------------------------
+n = 70000, Run = 2
+Insertion Sort Time: 13.8638 seconds
+Merge Sort Time: 0.107553 seconds
+Randomized Select Time: 0.001358 seconds
+-------------------------
+n = 70000, Run = 3
+Insertion Sort Time: 13.8204 seconds
+Merge Sort Time: 0.116082 seconds
+Randomized Select Time: 0.001973 seconds
+-------------------------
+n = 70000, Run = 4
+Insertion Sort Time: 13.8594 seconds
+Merge Sort Time: 0.108384 seconds
+Randomized Select Time: 0.001663 seconds
+-------------------------
+n = 70000, Run = 5
+Insertion Sort Time: 13.8837 seconds
+Merge Sort Time: 0.106662 seconds
+Randomized Select Time: 0.002292 seconds
+-------------------------
+n = 80000, Run = 1
+Insertion Sort Time: 18.253 seconds
+Merge Sort Time: 0.125185 seconds
+Randomized Select Time: 0.002286 seconds
+-------------------------
+n = 80000, Run = 2
+Insertion Sort Time: 18.9589 seconds
+Merge Sort Time: 0.125575 seconds
+Randomized Select Time: 0.002174 seconds
+-------------------------
+n = 80000, Run = 3
+Insertion Sort Time: 18.8644 seconds
+Merge Sort Time: 0.131177 seconds
+Randomized Select Time: 0.003884 seconds
+-------------------------
+n = 80000, Run = 4
+Insertion Sort Time: 18.8779 seconds
+Merge Sort Time: 0.127184 seconds
+Randomized Select Time: 0.002017 seconds
+-------------------------
+n = 80000, Run = 5
+Insertion Sort Time: 19.1305 seconds
+Merge Sort Time: 0.127964 seconds
+Randomized Select Time: 0.00262 seconds
+-------------------------
+n = 90000, Run = 1
+Insertion Sort Time: 23.9467 seconds
+Merge Sort Time: 0.145694 seconds
+Randomized Select Time: 0.002913 seconds
+-------------------------
+n = 90000, Run = 2
+Insertion Sort Time: 24.2888 seconds
+Merge Sort Time: 0.158137 seconds
+Randomized Select Time: 0.002975 seconds
+-------------------------
+n = 90000, Run = 3
+Insertion Sort Time: 24.2925 seconds
+Merge Sort Time: 0.156509 seconds
+Randomized Select Time: 0.001846 seconds
+-------------------------
+n = 90000, Run = 4
+Insertion Sort Time: 24.509 seconds
+Merge Sort Time: 0.156806 seconds
+Randomized Select Time: 0.001876 seconds
+-------------------------
+n = 90000, Run = 5
+Insertion Sort Time: 24.5975 seconds
+Merge Sort Time: 0.149542 seconds
+Randomized Select Time: 0.00309 seconds
+-------------------------
+n = 100000, Run = 1
+Insertion Sort Time: 30.4707 seconds
+Merge Sort Time: 0.173244 seconds
+Randomized Select Time: 0.002882 seconds
+-------------------------
+n = 100000, Run = 2
+Insertion Sort Time: 30.8394 seconds
+Merge Sort Time: 0.167529 seconds
+Randomized Select Time: 0.003556 seconds
+-------------------------
+n = 100000, Run = 3
+Insertion Sort Time: 30.7113 seconds
+Merge Sort Time: 0.166634 seconds
+Randomized Select Time: 0.003531 seconds
+-------------------------
+n = 100000, Run = 4
+Insertion Sort Time: 31.0081 seconds
+Merge Sort Time: 0.17333 seconds
+Randomized Select Time: 0.002759 seconds
+-------------------------
+n = 100000, Run = 5
+Insertion Sort Time: 31.1593 seconds
+Merge Sort Time: 0.183254 seconds
+Randomized Select Time: 0.003741 seconds
+-------------------------
