@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+
+
+void EEA(int a, int b)
+{
+  int s = 0;
+  int old_s = 1;
+  int t = 1;
+  int old_t = 0;
+  int r = b;
+  int old_r = a;
+
+  while(r != 0)
+    {
+      int q = (old_r/r);
+      int temp = old_r;
+      old_r = r;
+      r = (temp - q * r);
+      int temp1 = old_s;
+      old_s = s;
+      s = (temp1 - q * s);
+      int temp2 = old_t;
+      old_t = t;
+      old_t = (temp2 - q * t);
+      
+    }
+  cout<<"GCD of "<<a<<" and "<<b<<" is: "<<old_r<<"\n";
+
+  
+}
+
+int main() 
+
+{
+  //Inside main function,take two integer type variables a and b
+   int a,b;
+   
+   cout<<"Enter the first integer: ";
+   cin>>a;
+   
+   cout<<"Enter the second integer: ";
+   cin>>b;
+   /
+   EEA(a,b);
+   return 0;
+
+  
+ 
+}

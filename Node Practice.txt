@@ -1,0 +1,143 @@
+#include <iostream>
+using namespace std;
+
+
+struct slinklist{
+int data; 
+struct slinklist *next;
+};
+typedef struct slinklist node;
+node *start = NULL; 
+
+node *getnode(){//Function used to get a node 
+  node *newnode;
+  newnode = (node*)malloc(sizeof(node));
+  cout << "Enter Data:";
+  cin >> newnode->data;
+  newnode->next = NULL;
+  return newnode;
+}
+
+void createlist(int n)//Function to create a list of nodes
+{
+  int i;
+  node *newnode;
+  node *temp;// auxillary pointer(help pointer for transfering data)
+
+  for(int i = 0; i < n; i ++)
+    {
+      newnode = getnode();
+      if(start == NULL)
+      {
+        start = newnode;
+      }
+      else{
+        temp = start; 
+        while(temp->next != NULL)//-> is same as (*temp).next
+          {
+            temp = temp->next;
+          }
+        temp->next = newnode;
+      }
+    }
+  
+  
+  
+}
+
+//insertion node at beginning 
+
+
+void insert_at_begin(){
+  node *newnode;
+  newnode = getnode();
+
+  if(start == NULL)
+  {
+    start = newnode;
+    
+  }
+  else{
+    newnode->next = start;
+    start = newnode;
+    
+  }
+}
+
+//Insert at the end
+
+void insert_at_end()
+{
+  node *newnode, *temp;
+  newnode = getnode();
+
+  if(start == NULL)
+  {
+    start = newnode;
+  }
+  else
+  {
+    temp = start;
+    while(temp->next != NULL)
+      {
+        temp = temp->next;
+        
+      }
+ }
+  temp->next = newnode;
+  
+}
+
+//Insert at the middle 
+
+void insert_at_mid()
+{
+  node *newnode, *temp, *prev;
+  int position,nodectr, ctr = 1;
+  newnode = getnode();
+  
+  cout << "Enter Position: ";
+  cin >> position ;
+
+  //nodectr = countnode(start);
+
+  if(position > 1 && position < nodectr)
+  {
+    temp = start;
+    prev = start;
+
+      while(ctr < position)
+        {
+          prev = temp;
+          temp = temp->next;
+          ctr = ctr + 1;
+          
+        }
+    prev -> next = newnode;
+    newnode->next = temp;
+  }
+  
+
+  
+  
+
+}
+
+
+
+  
+
+  
+
+
+
+
+int main() {
+  
+  
+  int n = 1;
+  
+
+  createlist(n);
+  
+}
