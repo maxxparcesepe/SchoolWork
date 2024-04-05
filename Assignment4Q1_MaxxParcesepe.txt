@@ -1,0 +1,146 @@
+#include <iostream>
+#include <stdio.h>
+
+#define MAX 10 
+//small max because program purpose doesnt require 
+
+using namespace std;
+
+int front = 0;//first element(0)
+int rear = 1;//second element(1)
+int queue[MAX];
+
+
+
+
+void insertQ();//insert at rear of queue
+void deleteQ();//delete from front of queue
+void displayQ();
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+
+
+
+void insertQ()
+{
+	int valueU, data; 
+	char decision; 
+
+  cout << "Insert an element? 'Y' for yes or 'N' for no\n";
+  cin >> decision; 
+
+  switch(decision)
+    {
+      case 'N':
+       cout << "You have selected No.";
+        return;
+        break;
+      case 'Y':
+         if (rear == MAX)//error handling 
+		  {
+			 cout << "Stack overflow.\n";
+       cout << "Menu will now reprint.\n"; 
+        return;
+  	 	}
+	    else//if everything checks out
+	     {
+		    cout << "Enter data to be put in array: \n";
+		    cin >> data; 
+
+		    queue[rear-1] = data;//insert data in front(end) of queue
+
+		    rear = rear + 1;//set rear equal to next element or front of queue
+
+		    cout << "Data has been inserted into queue.\n\n\n";
+       
+
+       }
+        
+      
+    }
+
+ 
+		
+  
+}
+
+void deleteQ()
+{
+  if(rear == 1)//error handling
+  {
+    cout << "Please insert an element before deletion.\n";
+    return;
+    
+  }
+  else//if error handling passes delete first(back of queue) element
+  {
+    cout << "It will now dequeue.\n";
+    //move front forward to eliminate front element
+    front = front + 1;
+  }
+
+
+}
+
+void displayQ()
+{
+  if(rear == 1)
+  {
+    cout << "Queue is empty. You will be forwarded to the menu.\n\n";
+    return;
+   
+    
+  }
+  else
+  {
+    cout << "Elements in queue: \n";
+    //start from wherever front is and print
+    for(int i = front; i < rear-1; i++)
+      {
+        cout << queue[i];
+      }
+  }
+
+
+}
+
+
+
+int main()
+{
+  int menu_decision;
+  
+  do{
+    cout << "\nThis is the options menu for the queue editor. Please select an option.\n";
+	cout << "1. Insert\n";
+	cout << "2. Delete\n";
+	cout << "3. Display\n";
+
+	cin >> menu_decision;
+
+  int user_input = menu_decision;
+    
+      switch(user_input)
+        {
+          case 1:
+          insertQ();
+          break;
+
+          case 2:
+          deleteQ();
+          break;
+
+          case 3:
+          displayQ();
+          break;
+
+        }
+        
+      
+    }while(1);
+  
+   
+	
+
+}

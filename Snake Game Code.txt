@@ -1,0 +1,170 @@
+#include <iostream>
+#include <cstdlib> //c standard library
+#include "Snake.h"
+#include <conio.h> //control input and output or the library used to capture keystrokes
+
+
+#define WIDTH 50 
+#define HEIGHT 25
+
+
+using namespace std;
+
+//int x = 10, y = 10;  Global variable definitons for animation understanding
+
+
+Snake snake({ WIDTH / 2, HEIGHT / 2, }, 1);
+
+
+void board()
+{
+	COORD snake_pos = snake.get_pos();
+
+
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		cout << "\t\t#";
+		for (int j = 0; j < WIDTH - 2; j++)
+		{
+			if (i == 0 || i == HEIGHT - 1)
+			{
+				cout << '#';
+			}
+			else if (i == snake_pos.Y && j == snake_pos.X)
+			{
+				cout << "M";
+
+			}
+
+			else
+			{
+				cout << ' ';
+			}
+
+		}
+
+		cout << "#\n";
+	}
+
+
+}
+
+
+int main()
+{
+	while (true)
+	{
+		board();
+
+		if (kbhit())//registers keyboard hits
+		{
+			switch (getch())
+			{
+			case 'w':
+				snake.changeDir('u');
+				break;
+			case 's':
+				snake.changeDir('d');
+				break;
+			case 'a':
+				snake.changeDir('l');
+			case 'd':
+				snake.changeDir('r');
+				break;
+			}
+		}
+		snake.move_snake();
+
+
+		//system("cls"); || clear for linux "cls" is for windows || was used for demonstration
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), { 0,0 });
+
+
+	}
+
+	//FPS is based on OS -> faster with better OS 
+	//can use \r for moving cursor to beginning of line 
+	// ex  "Hello world\rasas" = "asaso world"
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef SNAKE_H
+#define SNAKE_H
+#include <windows.h>
+
+
+//needs 
+//position
+//length
+//direction
+//speed of snake needed
+class Snake
+{
+private:
+	COORD pos;
+	int len;
+	int velocity;
+	char direction;
+
+public:
+	Snake(COORD pos, int len);//constructor to initialize variables
+	void changeDir(char dir);//method to change direction 
+	void move_snake();//action to move snake in desired direction 
+	COORD get_pos();//get current position of snake
+
+
+};
+
+#endif // !
+
+#pragma once
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+#include <Snake.h>
+
+Snake::Snake(COORD pos, int len)
+{
+	this->pos = pos;
+	this->velocity = vel;
+	len = 1;
+	direction = 'n';
+
+}
+void Snake::changeDir(char dir)
+{
+	direction = dir;
+}
+
+void Snake::move_snake()
+{
+	//velocity a constant
+	switch (direction)
+	{
+		// subtract velocity(remove amount of characters)from total amount of upper characters
+	case 'u': pos.Y -= vel; break;
+		//add velocity( add amount of characters) from total amount of characters below position
+	case 'd': pos.Y += vel; break;
+	case 'l': pos.X -= vel; break;
+	case 'r': pos.X += vel; break;
+	}
+}
+COORD Snake::get_pos()
+{
+	return pos;
+
+}
+

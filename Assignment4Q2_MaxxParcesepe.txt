@@ -1,0 +1,112 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+//create struct for handling node information
+struct node
+{
+  int data;
+  node* left;
+  node* right;
+
+};
+
+//create class for tree
+class Tree
+{
+  public:
+  node *root;
+  Tree()
+  {
+  root = NULL;
+  }
+//function initilization
+  void insintree(int);
+  void inorder();
+};
+
+void Tree::insintree(int n)
+{  node *temp = new node;//create temp new node 
+    temp->data = n;//pointer from temp->data with user input info
+
+ //set left and right pointers = to null for initialization
+    temp->left = NULL;
+    temp->right = NULL;
+
+ //error handling if root has nothing in it. set it equal to new node
+    if(root == NULL)
+    {  root = temp;
+    }
+      
+    else
+    { 
+        //initialize parent and current node
+        node *current = root;
+        node *parent = NULL;
+      
+      //if current node is not empty
+        while(current != NULL)
+        { 
+            //make current node both parent and root 
+            parent = current;
+
+          //handling case if amount of nodes are less than desired amount 
+          //if they are insert left 
+          //if not insert right
+          
+            if(n < current->data)
+            {  current = current->left;
+            }
+            else
+            {  current = current->right;
+            }
+        }
+
+      //if current is = to null do the same thing but with parent node
+        if(n < parent->data)
+        {  parent->left = temp;
+        }
+        else
+        {  parent->right = temp;
+        }
+    }
+}
+
+
+void Tree::inorder()
+{  
+  stack<node*> stack;//create node stack called stack
+  node *current = root; //set current node = to root 
+
+  //execute while the current node is not equal to null or while the stack is not empty
+    while(current != NULL || !stack.empty())
+    {  
+      //under special case current  != NULL
+      while(current != NULL)
+        {  stack.push(current);
+            current = current->left;
+        }
+
+      //otherwise set current node to top of stack and pop. print data and set right child equal to current
+        current = stack.top();
+        stack.pop();
+        cout << current->data << " ";
+        current = current->right;
+    }
+}
+int main()
+{  
+    Tree tree;//initialize class in main
+    int n, nodes;
+    cout << "Enter the number of nodes you would like in the tree: \n";
+    cin >> n;
+    cout << "Create nodes for the tree: \n";
+    for(int i = 0; i < n; i++)
+    {  
+        cin >> nodes;
+        tree.insintree(nodes);
+    }
+    cout << "In-Order Traversing tree will be printed: \n";
+    tree.inorder();
+    return 0;
+}
