@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    
+<title>Math Calculations on a Set of Numbers</title>
+    
+<head>
+<link ref = "stylesheet" href = "main.css">
+    
+<link ref = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+<link ref = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    
+<link ref = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+<link ref = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<script src=“script.js”></script>
+ 
+</head>
+    
+
+    
+    
+<body>
+    
+    
+ <div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4">
+        <div class="card-body">
+            <h1 class="card-title mb-3">Calcuator Tool</h1>
+            
+            
+            <!--First Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group"> 
+                        <input class="form-control" type="text" placeholder="First Number" required id = "num1" > 
+                    </div>
+                </div>
+            </div>
+            
+            <!--Second Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Second Number" required id = "num2"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Third Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Third Number" required id = "num3"> 
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> <small class="agree-text">Click the button to make your calculations!------></small> 
+            <button  type = submit class="btn btn-primary btn-block confirm-button" id = "cal" onclick = "calculate()">Calculate!</button>
+            </div>
+            
+        </div>
+     </div>
+    </div>
+            
+            <!---Result Section--->
+            
+                           
+ <div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4">
+        <div class="card-body">
+            <h1 class="card-title mb-3">Result  Section</h1>
+            
+            
+            <!--Maximum Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group"> 
+                        <input class="form-control" type="text" placeholder="Maximum" required id = "max" > 
+                    </div>
+                </div>
+            </div>
+            
+            <!--Minimum Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Minimum" required id = "min"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Average Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Average" required id = "avg"> 
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!--Median Text Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Median" required id = "med"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Range Box-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="input-group"> 
+                            <input class="form-control" type="text" placeholder="Range" required id = "rng"> 
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </div>
+     </div> 
+</div>
+     
+    
+</body>
+    
+
+</html>
+
